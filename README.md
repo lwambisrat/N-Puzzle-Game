@@ -163,30 +163,6 @@ Left
 - If you see no solution for a puzzle that should be solvable, ensure you entered tiles in the correct order and the blank index is correct (0-based).
 - If runtime/memory usage is excessive for larger puzzles (e.g., 24-puzzle), consider switching to IDA* or using a specialized solver.
 
----
 
-## Contributing
 
-Contributions are welcome. Suggested improvements:
-- Add automated tests for solvability function and A* behavior.
-- Add a non-interactive mode (CLI flags) so the solver can accept input via command-line arguments or files for batch testing.
-- Implement alternative heuristics (linear conflict, pattern databases) and compare performance.
-- Provide an option to output intermediate boards or to visualize moves.
 
-To contribute:
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature/my-fix`
-3. Make changes, run tests (if available), and commit.
-4. Open a pull request describing your changes.
-
----
-
-## License
-
-Add a license file to the repository if you wish to make the code open source. Example: MIT License. If you want, I can add a LICENSE file for you.
-
----
-
-If you'd like, I can:
-- Rename `n_puzzle_solver.py` and open a PR with the README update and any other small edits, or
-- Create a non-interactive CLI wrapper (arguments + file input) so you can run puzzles from scripts or CI.
