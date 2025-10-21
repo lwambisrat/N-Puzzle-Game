@@ -163,6 +163,13 @@ Left
 - If you see no solution for a puzzle that should be solvable, ensure you entered tiles in the correct order and the blank index is correct (0-based).
 - If runtime/memory usage is excessive for larger puzzles (e.g., 24-puzzle), consider switching to IDA* or using a specialized solver.
 
+## Technologies
+
+- Python 3.7+ (recommended 3.8+)
+- Standard library: heapq, math
+- Optional tooling: a code editor (VS Code), Git, and Python virtual environment tools
+
+
 
 
 
