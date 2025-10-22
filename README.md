@@ -1,6 +1,6 @@
 # N-Puzzle Game Solver
 
-This project features a clean, Python-based A* search engine designed specifically for the N-Puzzle. Simply input any custom board layout via the console. The program immediately performs a crucial solvability check and, if the puzzle is valid, it runs an informed search using the powerful Manhattan distance heuristic to deliver the guaranteed optimal solution path.
+This project is a smart A* search engine, built simply in Python, that cracks the N-Puzzle. It works by letting you type in your scrambled board configuration, after which the program instantly runs a solvability check to save you time on impossible layouts. If the puzzle is valid, it uses the efficient Manhattan distance heuristic to guarantee the absolute shortest path to the solution.
 
 
 
@@ -31,7 +31,6 @@ This project features a clean, Python-based A* search engine designed specifical
 ## Requirements
 
 - Python version 3 or above
-- No external Python packages are required (uses only Python standard library: `heapq`, `math`).
 
 ---
 
