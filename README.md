@@ -14,10 +14,10 @@ This repository contains a console program that accepts a user-provided board co
 - Run the solver
 - Input format and example
 - How the solver works
+- Google Colab demo to test the functionality
 - Complexity and limitations
 - Troubleshooting
-- Contributing
-- License
+
 
 ---
 
