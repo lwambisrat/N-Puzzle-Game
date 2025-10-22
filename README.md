@@ -145,7 +145,7 @@ Left
 
 ## Google Colab demo to Test the functionality
 
-You can test and visually confirm the solver using the interactive Colab notebook hosted on your Google Drive. The notebook provides a clickable grid UI (ipywidgets) so you can move tiles with the mouse and verify behavior visually.
+You can test and visually confirm the solver using the interactive Colab notebook hosted on your Google Drive. The notebook provides a clickable grid UI (ipywidgets).
 
 Open the Colab test here:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Lkjzn3T9rwCbEeLngqkUtWSJZA1ZPk4)
@@ -176,7 +176,7 @@ How to run the Colab test
 
 ## Troubleshooting
 
-- If the program reports the puzzle as unsolvable, re-check the tile permutation and blank position; the solver properly uses the inversion+blank rules.
+- If the program reports the puzzle as unsolvable, re-check the tile permutation and blank position
 - If you see no solution for a puzzle that should be solvable, ensure you entered tiles in the correct order and the blank index is correct (0-based).
 - If runtime/memory usage is excessive for larger puzzles (e.g., 24-puzzle), consider switching to IDA* or using a specialized solver.
 
@@ -184,7 +184,6 @@ How to run the Colab test
 
 - Python 3.7+ (recommended 3.8+)
 - Standard library: heapq, math
-- Optional tooling: a code editor (VS Code), Git, and Python virtual environment tools
 
 
 
