@@ -144,6 +144,28 @@ Left
 
 ---
 
+## Google Colab demo to Test the functionality
+
+Colab Test Title: Interactive NPuzzle Demo — Drive Notebook
+
+You can test and visually confirm the solver using the interactive Colab notebook hosted on your Google Drive. The notebook provides a clickable grid UI (ipywidgets) so you can move tiles with the mouse and verify behavior visually.
+
+Open the Colab test here:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Lkjzn3T9rwCbEeLngqkUtWSJZA1ZPk4)
+
+What the Colab test does
+- Runs an interactive widget-based N-Puzzle within Colab.
+- Performs solvability analysis and prints an explanation.
+- Allows clicking adjacent tiles to move them; shows move count and success message when the puzzle is solved.
+- Uses ipywidgets for the UI; input() is used for initial layout in the current notebook version but the main interaction is widget-based.
+
+How to run the Colab test
+1. Click the "Open In Colab" badge (link above) to open the notebook.
+2. In Colab choose Runtime → Run all (or run individual cells).
+3. When prompted in the input cell(s) provide the puzzle size and the tile layout (examples are shown in the notebook).
+4. Use the clickable grid to play and confirm solver behavior.
+
+
 ## Complexity and limitations
 
 - A* with Manhattan heuristic is admissible and typically effective for small N (8, 15).
