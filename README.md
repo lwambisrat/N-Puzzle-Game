@@ -12,7 +12,6 @@ This repository contains a console program that accepts a user-provided board co
 - Requirements
 - Clone the repository
 - Run the solver
-  - Recommended: n_puzzle_solver.py
 - Input format and example
 - How the solver works
 - Complexity and limitations
