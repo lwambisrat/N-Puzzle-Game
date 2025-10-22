@@ -3,9 +3,7 @@
 A simple A* solver for the N-Puzzle (sliding puzzle) implemented in Python.  
 This repository contains a console program that accepts a user-provided board configuration, checks solvability, and—if solvable—searches for an optimal solution using the Manhattan distance heuristic.
 
-Note: your main solver file is named `n_puzzle_solver.py`. The README below assumes that filename.
 
----
 
 ## Table of Contents
 
