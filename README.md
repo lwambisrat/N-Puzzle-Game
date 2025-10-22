@@ -1,13 +1,11 @@
 # N-Puzzle Game Solver
 
-A simple A* solver for the N-Puzzle (sliding puzzle) implemented in Python.  
-This repository contains a console program that accepts a user-provided board configuration, checks solvability, and—if solvable—searches for an optimal solution using the Manhattan distance heuristic.
+This project features a clean, Python-based A* search engine designed specifically for the N-Puzzle. Simply input any custom board layout via the console. The program immediately performs a crucial solvability check and, if the puzzle is valid, it runs an informed search using the powerful Manhattan distance heuristic to deliver the guaranteed optimal solution path.
 
 
 
 ## Table of Contents
 
-- Overview
 - Features
 - Requirements
 - Clone the repository
@@ -15,23 +13,11 @@ This repository contains a console program that accepts a user-provided board co
 - Input format and example
 - How the solver works
 - Google Colab demo to test the functionality
-- Complexity and limitations
 - Troubleshooting
 
 
 ---
 
-## Overview
-
-The N-Puzzle Game Solver reads a user-provided N-Puzzle initial layout, determines if the layout is solvable, and, if so, runs an A* search using the Manhattan distance heuristic to find an optimal sequence of moves from the initial board to the goal.
-
-The goal board used by the solver is the canonical layout:
-1 2 3 ...
-... N 0
-
-Where `0` denotes the empty tile.
-
----
 
 ## Features
 
@@ -44,7 +30,7 @@ Where `0` denotes the empty tile.
 
 ## Requirements
 
-- Python 3.7+ (recommended: Python 3.8 or later)
+- Python version 3 or above
 - No external Python packages are required (uses only Python standard library: `heapq`, `math`).
 
 ---
@@ -67,8 +53,7 @@ cd N-Puzzle-Game
 
 ## Run the solver
 
-This repository's solver script is `n_puzzle_solver.py`. Run it with Python:
-
+To start solving, just open your terminal in the repository folder and run the main script using Python:
 ```
 python3 n_puzzle_solver.py
 ```
@@ -77,10 +62,6 @@ The script will run interactively and prompt for:
 - Number of blocks N (e.g., 8 for 3x3 puzzle, 15 for 4x4)
 - Starting index for the empty tile (0)
 - The remaining N tile numbers (1..N) in a single line separated by spaces
-
-Follow the prompts exactly. The program will assemble the full board internally.
-
----
 
 ## Input format and example
 
@@ -145,7 +126,7 @@ Left
 
 ## Google Colab demo to Test the functionality
 
-You can test and visually confirm the solver using the interactive Colab notebook hosted on your Google Drive. The notebook provides a clickable grid UI (ipywidgets).
+Try out the solver. Open the interactive Colab notebook for a fun visual experience. It includes a clickable grid interface so you can easily test board configurations and watch the results.
 
 Open the Colab test here:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17Lkjzn3T9rwCbEeLngqkUtWSJZA1ZPk4)
@@ -153,26 +134,19 @@ Open the Colab test here:
 What the Colab test does
 - Runs an interactive widget-based N-Puzzle within Colab.
 - Performs solvability analysis and prints an explanation.
-- Allows clicking adjacent tiles to move them; shows move count and success message when the puzzle is solved.
-- Uses ipywidgets for the UI; input() is used for initial layout in the current notebook version but the main interaction is widget-based.
+- Allows clicking adjacent tiles to move them - shows move count and success message when the puzzle is solved.
+- Uses ipywidgets for the UI - input() is used for initial layout in the current notebook version but the main interaction is widget-based.
 
 How to run the Colab test
-1. Click the "Open In Colab" badge (link above) to open the notebook.
-2. In Colab choose Runtime → Run all (or run individual cells).
-3. When prompted in the input cell(s) provide the puzzle size and the tile layout (examples are shown in the notebook).
-4. Use the clickable grid to play and confirm solver behavior.
 
+1.Hit the "Open In Colab" link to jump straight to the notebook.
 
-## Complexity and limitations
+2.Once it's loaded, select Runtime → Run all from the menu to execute the code.
 
-- A* with Manhattan heuristic is admissible and typically effective for small N (8, 15).
-- Memory usage grows quickly with branching factor — large puzzles (e.g., 24-puzzle) may be infeasible to solve optimally on a typical machine.
-- Performance improvements to consider:
-  - IDA* (Iterative Deepening A*) to limit memory usage.
-  - More advanced heuristics (pattern databases) for larger puzzles.
-  - Bidirectional search or state hashing with more efficient structures.
+3.The notebook will ask you for a few things—just enter the puzzle size and the tile layout when prompted (there are examples to guide you!).
 
----
+4.A clickable grid will appear! Use it to play with the puzzle and see the solver's logic in real-time.
+
 
 ## Troubleshooting
 
@@ -180,10 +154,7 @@ How to run the Colab test
 - If you see no solution for a puzzle that should be solvable, ensure you entered tiles in the correct order and the blank index is correct (0-based).
 - If runtime/memory usage is excessive for larger puzzles (e.g., 24-puzzle), consider switching to IDA* or using a specialized solver.
 
-## Technologies
 
-- Python version 3 or higher
-- Standard library: heapq, math
 
 
 
