@@ -1,6 +1,6 @@
 # N-Puzzle Game Solver
 
-This project is a smart A* search engine, built simply in Python, that cracks the N-Puzzle. It works by letting you type in your scrambled board configuration, after which the program instantly runs a solvability check to save you time on impossible layouts. If the puzzle is valid, it uses the efficient Manhattan distance heuristic to guarantee the absolute shortest path to the solution.
+This project is a smart A* search engine, built simply in Python, that cracks the N-Puzzle. It works by letting a user type in your scrambled board configuration, after which the program instantly runs a solvability check to save you time on impossible layouts. If the puzzle is valid, it uses the efficient Manhattan distance heuristic to guarantee the absolute shortest path to the solution.
 
 
 
@@ -23,7 +23,7 @@ This project is a smart A* search engine, built simply in Python, that cracks th
 
 - Solvability check for general N-Puzzle sizes (e.g., 8-puzzle, 15-puzzle).
 - A* search with Manhattan distance heuristic.
-- Human-friendly interactive input (console prompts).
+- Human-friendly interactive input.
 - Prints the optimal path length and sequence of moves when a solution is found.
 
 ---
@@ -70,7 +70,6 @@ When prompted:
 - Enter the number of blocks (N) [e.g., 8, 15]: 8
 
 - Enter the STARTING index for the empty block (0) (0 to 8): 4  
-  (Indices are 0-based, left-to-right, top-to-bottom; index 4 is the center of a 3x3)
 
 - Enter the 8 remaining tiles (1 to 8), separated by spaces:  
   1 2 3 4 5 6 7 8
@@ -134,7 +133,6 @@ What the Colab test does
 - Runs an interactive widget-based N-Puzzle within Colab.
 - Performs solvability analysis and prints an explanation.
 - Allows clicking adjacent tiles to move them - shows move count and success message when the puzzle is solved.
-- Uses ipywidgets for the UI - input() is used for initial layout in the current notebook version but the main interaction is widget-based.
 
 How to run the Colab test
 
@@ -142,16 +140,15 @@ How to run the Colab test
 
 2.Once it's loaded, select Runtime → Run all from the menu to execute the code.
 
-3.The notebook will ask you for a few things—just enter the puzzle size and the tile layout when prompted (there are examples to guide you!).
+3.The notebook will ask you to enter the puzzle size and the tile layout when prompted.
 
-4.A clickable grid will appear! Use it to play with the puzzle and see the solver's logic in real-time.
+4.A clickable grid will appear. Use it to play with the puzzle and see the solver's logic in real-time.
 
 
 ## Troubleshooting
 
 - If the program reports the puzzle as unsolvable, re-check the tile permutation and blank position
 - If you see no solution for a puzzle that should be solvable, ensure you entered tiles in the correct order and the blank index is correct (0-based).
-- If runtime/memory usage is excessive for larger puzzles (e.g., 24-puzzle), consider switching to IDA* or using a specialized solver.
 
 
 
