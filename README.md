@@ -145,8 +145,6 @@ Left
 
 ## Google Colab demo to Test the functionality
 
-Colab Test Title: Interactive NPuzzle Demo — Drive Notebook
-
 You can test and visually confirm the solver using the interactive Colab notebook hosted on your Google Drive. The notebook provides a clickable grid UI (ipywidgets) so you can move tiles with the mouse and verify behavior visually.
 
 Open the Colab test here:
