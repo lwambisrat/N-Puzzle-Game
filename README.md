@@ -182,7 +182,7 @@ How to run the Colab test
 
 ## Technologies
 
-- Python 3.7+ (recommended 3.8+)
+- Python version 3 or higher
 - Standard library: heapq, math
 
 
